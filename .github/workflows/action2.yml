@@ -26,18 +26,18 @@ jobs:
       with:
         channel: 'dev' # 'dev', 'alpha', default to: 'stable'
         # flutter-version: '1.12.x' # you can also specify exact version of flutter
-    
+    - run: echo %cd%
     # Get flutter dependencies.
     - run: flutter pub get
-
+    
     # Add desktop support.
     - run: flutter config --enable-windows-desktop
     - run: flutter create --platforms=windows,macos,linux .
     
     # Build windows
     - run: flutter build windows
-    - run: cd \build\windows\runner
-    - run: jar -cfM release.zip Release
+   
+    - run: jar -cfM release.zip build
     - uses: actions/upload-artifact@v1
       with:
         name: release-exe
