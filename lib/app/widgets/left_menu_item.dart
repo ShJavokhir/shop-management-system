@@ -32,7 +32,9 @@ class LeftMenuItem extends StatelessWidget {
               SizedBox(width: 8),
               Text(title,
               style: TextStyle(
-                fontSize: 20
+                fontSize: 20,
+                fontFamily: "Poppins",
+                fontWeight: hover ? FontWeight.w800: FontWeight.w500
               ),),
             ]),
           )),

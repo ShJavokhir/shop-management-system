@@ -8,6 +8,7 @@ void main() {
   runApp(
     GetMaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(fontFamily: 'Poppins'),
       title: "Application",
       initialRoute: AppPages.INITIAL,
       getPages: AppPages.routes,
