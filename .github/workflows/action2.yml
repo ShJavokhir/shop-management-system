@@ -31,6 +31,7 @@ jobs:
     - run: flutter pub get
 
     # Add desktop support.
+    - run: cd shop-management-system
     - run: flutter config --enable-windows-desktop
     - run: flutter create --platforms=windows,macos,linux .
     
