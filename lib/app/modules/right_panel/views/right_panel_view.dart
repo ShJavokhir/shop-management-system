@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:shop_management_system/app/data/themes/dark_colors.dart';
-import 'package:shop_management_system/app/widgets/sold_item.dart';
 
 import '../controllers/right_panel_controller.dart';
 

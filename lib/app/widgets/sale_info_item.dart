@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shop_management_system/app/data/themes/dark_colors.dart';
-/**
+/*
  * Created by IntelliJ IDEA.<br/>
  * User: javokhir<br/>
  * Date: 29/08/21<br/>
