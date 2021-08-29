@@ -36,3 +36,12 @@ jobs:
     
     # Build windows
     - run: flutter build windows
+    - run: cd \build\windows\runner
+    - run: jar -cfM release.zip Release
+    - uses: actions/upload-artifact@v1
+      with:
+        name: release-exe
+        path: release.zip
+        
+        
+
