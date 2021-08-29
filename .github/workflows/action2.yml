@@ -32,7 +32,7 @@ jobs:
 
     # Add desktop support.
     - run: flutter config --enable-windows-desktop
-
+    - run: flutter create --platforms=windows,macos,linux .
     
     # Build windows
     - run: flutter build windows
