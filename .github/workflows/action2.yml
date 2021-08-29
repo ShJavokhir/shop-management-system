@@ -29,9 +29,6 @@ jobs:
     
     # Get flutter dependencies.
     - run: flutter pub get
-    
-    # Statically analyze the Dart code for any errors.
-    - run: flutter analyze .
 
     # Add desktop support.
     - run: flutter config --enable-windows-desktop
