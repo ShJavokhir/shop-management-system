@@ -7,5 +7,6 @@ class DarkColors{
   static const cyan1 = const Color(0xFF00F5FF);
   static const green1 = const Color(0xFFC6FD7A);
   static const textColor1 = const Color(0xFFFFFFFF);
+  static const red1 = const Color(0xFFf50057);
 
 }
