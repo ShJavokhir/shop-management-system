@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:shop_management_system/app/data/themes/dark_colors.dart';
 class StandartButton extends StatelessWidget {
-  void Function() ?onPressed;
-  String title;
-  Color color;
-  StandartButton({required this.title, required this.color, this.onPressed}) : super();
+  final void Function() ?onPressed;
+  final String title;
+  final Color color;
+  const StandartButton({required this.title, required this.color, this.onPressed}) : super();
 
   @override
-  Widget buigld(BuildContext context) {
+  Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
       child: ElevatedButton(

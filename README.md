@@ -1,2 +1,2 @@
 # Shop management system
-I am creating this project for our shop and to practice clean coding
+Please not that, this project is paused for a while. The reason is that, our planning database service Firestore is not supported natively for Flutter Windows. Until that I will do my other projects

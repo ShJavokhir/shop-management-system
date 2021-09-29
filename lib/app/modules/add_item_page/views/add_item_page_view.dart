@@ -90,7 +90,9 @@ class AddItemPageView extends GetView<AddItemPageController> {
               Expanded(
                 child: CustomTextField(
                   labelText: "Mahsulot nomi",
-                  onChanged: (_) {},
+                  onChanged: (name) {
+                    controller.name.value = name;
+                  },
                 ),
               ),
             ],
@@ -102,7 +104,9 @@ class AddItemPageView extends GetView<AddItemPageController> {
             Expanded(
               child: CustomTextField(
                 labelText: "Soni",
-                onChanged: (_) {},
+                onChanged: (quantity) {
+                  controller.quantity.value = int.parse(quantity) ;
+                },
               ),
             ),
             SizedBox(
@@ -111,7 +115,9 @@ class AddItemPageView extends GetView<AddItemPageController> {
             Expanded(
               child: CustomTextField(
                 labelText: "Narxi",
-                onChanged: (_) {},
+                onChanged: (price) {
+                  controller.price.value = double.parse(price) ;
+                },
               ),
             ),
           ]),
@@ -128,14 +134,18 @@ class AddItemPageView extends GetView<AddItemPageController> {
               Expanded(child: Column(children: [
                 CustomTextField(
                   labelText: "Shtrix kod",
-                  onChanged: (_) {},
+                  onChanged: (qrCode) {
+                    controller.qrCode.value = int.parse(qrCode);
+                  },
                 ),
                 SizedBox(
                   height: 20,
                 ),
                 CustomTextField(
                   labelText: "Do'kon nomi",
-                  onChanged: (_) {},
+                  onChanged: (shopName) {
+                    controller.shopName.value = shopName;
+                  },
                 ),
               ],)),
               SizedBox(
@@ -146,7 +156,9 @@ class AddItemPageView extends GetView<AddItemPageController> {
 
                   child: CustomTextField(
                     labelText: "Qo'shimcha ma'lumot",
-                    onChanged: (_) {},
+                    onChanged: (moreInfo) {
+                      controller.moreInfo.value = moreInfo;
+                    },
                   ),
                 ),
               ],))
@@ -155,7 +167,10 @@ class AddItemPageView extends GetView<AddItemPageController> {
         SizedBox(height: 40,),
           Row(
             children: [
-              Expanded(child: StandartButton(title: "Tozalash", color: DarkColors.red1, onPressed: (){},)),
+              Expanded(child: StandartButton(title: "Tozalash", color: DarkColors.red1, onPressed: (){
+
+                print(controller.toString());
+              },)),
               SizedBox(width: 20),
               Expanded(child: StandartButton(title: "Qo'shish", color: DarkColors.green1, onPressed: (){},)),
             ],

@@ -1,9 +1,14 @@
 import 'package:get/get.dart';
 
 class AddItemPageController extends GetxController {
-  //TODO: Implement AddItemPageController
 
-  final count = 0.obs;
+  var qrCode = RxInt(0);
+  var name = RxString('');
+  var price = RxDouble(0);
+  var quantity = RxInt(0);
+  var shopName = RxString('');
+  var moreInfo = RxString('');
+
   @override
   void onInit() {
     super.onInit();
@@ -16,5 +21,9 @@ class AddItemPageController extends GetxController {
 
   @override
   void onClose() {}
-  void increment() => count.value++;
+
+  @override
+  String toString(){
+    return '$qrCode $name $price $quantity $shopName $moreInfo';
+  }
 }
